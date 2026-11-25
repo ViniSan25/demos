@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wellness Boutique | Clínica de estética em Cambuí, Campinas</title>
+<meta name="description" content="Wellness Boutique: clínica de estética em Cambuí, Campinas. Veja endereço, horários e fale pelo WhatsApp.">
+<!-- DEMO: esta linha impede o Google de listar a prévia. REMOVA no site final do cliente. -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Wellness Boutique | Clínica de estética em Cambuí, Campinas">
+<meta property="og:description" content="Wellness Boutique: clínica de estética em Cambuí, Campinas. Veja endereço, horários e fale pelo WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1100&q=75">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================
+   CORES E FONTES — troque aqui para combinar com a marca do cliente
+   ========================================================== */
+:root{
+  --marca:#4d5b4a;               /* cor principal (escura) */
+  --marca-2:#353f33;            /* versão mais escura da principal */
+  --acento:#e8d3b0;             /* cor de detalhe */
+  --acento-texto:#8d6d3c; /* cor de detalhe para textos em fundo claro */
+  --creme:#f8f7f2;               /* fundo suave das seções */
+  --tinta:#232920;               /* texto */
+  --tinta-2:#61685e;            /* texto secundário */
+  --linha:#e5e5dc;               /* linhas e bordas */
+  --rodape:#191d17;
+  --botao:#4d5b4a;               /* fundo do botão principal */
+  --botao-texto:#ffffff;
+  --raio:14px;                 /* cantos dos cartões */
+  --raio-btn:99px;         /* cantos dos botões */
+  --raio-foto:999px 999px 24px 24px;       /* formato da foto do topo */
+  --fonte-titulo:'Cormorant Garamond',Georgia,serif;
+  --fonte-texto:'Jost',system-ui,sans-serif;
+  --peso-titulo:500;
+  --espaco-titulo:-.01em;
+  --escala-titulo:1.22;   /* aumenta títulos de fontes mais estreitas */
+  --em-estilo:italic;           /* palavra destacada do título: italic ou normal */
+  --foco-hero:center;           /* parte da foto do topo que fica visível */
+  --proporcao-foto:4/5.1;
+  --btn-caixa:uppercase;
+  --btn-espaco:.12em;
+  --btn-tamanho:.8rem;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--fonte-texto);color:var(--tinta);background:#fff;line-height:1.65;font-size:1.02rem;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+[hidden]{display:none!important}
+.container{width:min(1160px,100% - 40px);margin-inline:auto}
+section{padding:clamp(64px,9vw,112px) 0}
+h1,h2,h3,.logo,.numero b,.cartao-nota b{font-family:var(--fonte-titulo);font-weight:var(--peso-titulo);letter-spacing:var(--espaco-titulo);line-height:1.08;text-wrap:balance}
+h1{font-size:calc(clamp(2.3rem,5.4vw,4rem) * var(--escala-titulo))}
+h2{font-size:calc(clamp(1.8rem,3.4vw,2.7rem) * var(--escala-titulo));margin-bottom:14px}
+h3{font-size:calc(1.22rem * var(--escala-titulo));line-height:1.25}
+h1 em,h2 em{font-style:var(--em-estilo);color:var(--acento-texto)}
+.sobretitulo{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acento-texto);margin-bottom:16px}
+.subtitulo{color:var(--tinta-2);max-width:560px}
+.cabecalho{display:flex;justify-content:space-between;align-items:end;gap:20px 40px;flex-wrap:wrap;margin-bottom:48px}
+.cabecalho h2{margin-bottom:0;max-width:640px}
+.cabecalho .subtitulo{max-width:420px}
+.fundo-creme{background:var(--creme)}
+.estrelas{color:#f5b301;letter-spacing:2px}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:var(--raio-btn);font-family:var(--fonte-texto);font-weight:600;font-size:var(--btn-tamanho,.98rem);text-transform:var(--btn-caixa,none);letter-spacing:var(--btn-espaco,0);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .15s,background .15s,color .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-marca{background:var(--botao);color:var(--botao-texto)}
+.btn-marca:hover{box-shadow:0 10px 24px color-mix(in srgb,var(--botao) 35%,transparent)}
+.btn-contorno{border-color:var(--marca);color:var(--marca)}
+.btn-contorno:hover{background:var(--marca);color:#fff}
+.btn-claro{background:#fff;color:var(--marca)}
+.btn-claro:hover{box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.btn-fantasma{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-fantasma:hover{background:#fff;color:var(--marca)}
+
+/* Barra fina do topo */
+.barra{background:var(--marca);color:rgba(255,255,255,.82);font-size:.82rem}
+.barra .container{display:flex;justify-content:space-between;gap:16px;padding-block:9px}
+.barra b{color:#fff;font-weight:600}
+@media (max-width:700px){.barra .container{justify-content:center;text-align:center}.barra-tel,.barra-horario{display:none}}
+
+/* Cabeçalho */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--linha)}
+.topo{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-size:calc(1.28rem * var(--escala-titulo));text-decoration:none;color:var(--marca);min-width:0}
+.logo span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.logo-icone{width:38px;height:38px;flex:none;border-radius:50%;background:var(--marca);display:grid;place-items:center}
+.logo-icone svg{width:20px;height:20px;stroke:var(--acento);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+nav ul{display:flex;gap:30px;list-style:none}
+nav a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--tinta-2);transition:color .15s}
+nav a:hover{color:var(--marca)}
+.topo .btn{padding:11px 20px;font-size:calc(var(--btn-tamanho,.98rem) * .93);flex:none}
+@media (max-width:900px){nav{display:none}}
+@media (max-width:460px){.topo .btn span{display:none}.topo .btn{padding:11px}}
+
+/* Topo com foto de fundo (hero-cheio) */
+.hero-cheio{position:relative;padding:0;min-height:min(86vh,740px);display:flex;align-items:center;background:var(--marca-2);color:#fff;overflow:hidden}
+.hero-fundo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--foco-hero)}
+.hero-veu{position:absolute;inset:0;background:linear-gradient(90deg,var(--marca-2) 0%,var(--marca-2) 36%,color-mix(in srgb,var(--marca-2) 55%,transparent) 58%,color-mix(in srgb,var(--marca-2) 8%,transparent) 100%)}
+@media (min-width:761px){.hero-fundo{left:auto;right:0;width:66%}}
+.hero-conteudo{position:relative;padding-block:96px}
+.hero-conteudo > *{max-width:600px}
+.hero-cheio .sobretitulo,.hero-cheio h1 em{color:var(--acento)}
+.hero-texto{font-size:1.15rem;margin:22px 0 34px;max-width:540px}
+.hero-cheio .hero-texto{color:rgba(255,255,255,.86)}
+.hero-botoes{display:flex;flex-wrap:wrap;gap:12px}
+.hero-nota{display:flex;align-items:center;gap:10px;margin-top:32px;font-size:.92rem;flex-wrap:wrap}
+.hero-pontos{list-style:none;display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:32px;font-size:.93rem;font-weight:500}
+.hero-pontos li::before{content:"✓";margin-right:8px;color:var(--acento-texto);font-weight:700}
+.hero-cheio .hero-pontos li::before{color:var(--acento)}
+@media (max-width:760px){
+  .hero-cheio{min-height:620px}
+  .hero-veu{background:linear-gradient(180deg,color-mix(in srgb,var(--marca-2) 80%,transparent),color-mix(in srgb,var(--marca-2) 93%,transparent))}
+  .hero-conteudo{padding-block:72px}
+}
+
+/* Topo dividido: texto de um lado, foto do outro (hero-dividido) */
+.hero-dividido{background:var(--creme);padding:clamp(48px,7vw,88px) 0 clamp(64px,8vw,104px);overflow:hidden}
+.hero-grade{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero-dividido .hero-texto{color:var(--tinta-2)}
+.hero-moldura{position:relative;justify-self:end;width:100%;max-width:520px}
+.hero-moldura::before{content:"";position:absolute;right:-18px;bottom:-18px;width:74%;height:74%;border-radius:var(--raio-foto);background:var(--acento);opacity:.5}
+.hero-moldura img{position:relative;width:100%;aspect-ratio:var(--proporcao-foto,4/4.6);object-fit:cover;object-position:var(--foco-hero);border-radius:var(--raio-foto);background:var(--linha)}
+.cartao-nota{position:absolute;left:-24px;bottom:36px;background:#fff;border-radius:16px;padding:14px 20px 14px 16px;box-shadow:0 18px 40px rgba(0,0,0,.14);display:flex;align-items:center;gap:14px;font-size:.82rem;line-height:1.35;color:var(--tinta-2)}
+.cartao-nota b{font-size:calc(2rem * var(--escala-titulo));color:var(--marca);line-height:1}
+.cartao-nota .estrelas{display:block;font-size:.85rem}
+.sem-foto .hero-grade{grid-template-columns:1fr}
+.sem-foto .hero-moldura{display:none}
+@media (max-width:860px){.hero-grade{grid-template-columns:1fr}.hero-moldura{justify-self:center;max-width:440px;width:calc(100% - 18px);margin-right:18px}.cartao-nota{left:10px;bottom:22px}}
+
+/* Faixa de números */
+.faixa-numeros{padding:0;border-bottom:1px solid var(--linha);overflow:hidden}
+.numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.numero{padding:34px 20px;text-align:center;border-left:1px solid var(--linha);border-top:1px solid var(--linha);margin:-1px 0 0 -1px}
+.numero b{display:block;font-size:calc(clamp(1.6rem,2.8vw,2.3rem) * var(--escala-titulo));color:var(--marca);margin-bottom:8px}
+.numero > span{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-2)}
+@media (max-width:700px){.numeros{grid-template-columns:1fr 1fr}.numero{padding:24px 10px}}
+
+/* Serviços */
+.grade-servicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.servico{background:var(--creme);border:1px solid transparent;border-radius:var(--raio);padding:34px 30px;transition:background .2s,box-shadow .2s,transform .2s,border-color .2s}
+.servico:hover{background:#fff;border-color:var(--linha);box-shadow:0 18px 40px rgba(0,0,0,.07);transform:translateY(-4px)}
+.servico .icone{width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center;margin-bottom:22px;transition:background .2s}
+.servico:hover .icone{background:var(--creme)}
+.servico .icone svg{width:24px;height:24px;stroke:var(--marca);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.servico h3{margin-bottom:8px}
+.servico p{color:var(--tinta-2);font-size:.97rem}
+
+/* Sobre */
+.sobre-grade{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(36px,6vw,84px);align-items:center}
+.sobre-foto img{width:100%;aspect-ratio:4/4.4;object-fit:cover;border-radius:var(--raio);background:var(--creme)}
+.sobre-grade.sem-foto{grid-template-columns:1fr}
+.sobre-grade.sem-foto .sobre-foto{display:none}
+.lista-check{list-style:none;margin:28px 0 34px;display:grid;gap:14px}
+.lista-check li{display:flex;gap:14px;align-items:flex-start}
+.lista-check li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;background:var(--marca) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2l2.3 2.3 4.7-5' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+@media (max-width:860px){.sobre-grade{grid-template-columns:1fr}.sobre-foto img{aspect-ratio:4/3}}
+
+/* Galeria de fotos (aparece só se houver fotos em CLIENTE.fotos) */
+.grade-fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grade-fotos img{width:100%;aspect-ratio:4/4.6;object-fit:cover;border-radius:var(--raio);background:var(--creme)}
+.grade-fotos img:nth-child(3n+2){margin-top:36px}
+@media (max-width:700px){.grade-fotos{grid-template-columns:1fr 1fr;gap:10px}.grade-fotos img:nth-child(3n+2){margin-top:0}.grade-fotos img:nth-child(3n){grid-column:1/-1;aspect-ratio:16/9}}
+
+/* Chamada (faixa escura) */
+.chamada{background:var(--marca);color:#fff;position:relative;overflow:hidden}
+.chamada::before{content:"";position:absolute;width:520px;height:520px;right:-140px;top:-240px;border-radius:50%;background:var(--acento);opacity:.13}
+.chamada .container{position:relative;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between}
+.chamada h2{max-width:620px}
+.chamada p{color:rgba(255,255,255,.82);max-width:540px}
+
+/* Depoimentos */
+.grade-depo{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.depo{background:#fff;border-radius:var(--raio);padding:32px;display:flex;flex-direction:column}
+.depo p{margin:14px 0 24px;flex:1}
+.autor{display:flex;align-items:center;gap:12px;font-weight:600}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--creme);color:var(--marca);display:grid;place-items:center;font-weight:700;flex:none}
+.autor small{display:block;color:var(--tinta-2);font-weight:400}
+
+/* Passo a passo (usado no nicho de advocacia) */
+.grade-passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;counter-reset:passo}
+.passo{background:#fff;border-radius:var(--raio);padding:32px 28px}
+.passo::before{counter-increment:passo;content:"0" counter(passo);display:block;font-family:var(--fonte-titulo);font-size:2.4rem;line-height:1;color:var(--acento-texto);margin-bottom:18px}
+.passo h3{margin-bottom:8px}
+.passo p{color:var(--tinta-2);font-size:.97rem}
+
+/* Dúvidas */
+.faq-grade{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,80px);align-items:start}
+details{border-bottom:1px solid var(--linha);padding:22px 0}
+details:first-of-type{border-top:1px solid var(--linha)}
+summary{font-weight:600;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;font-weight:300;color:var(--marca);line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--tinta-2);max-width:560px}
+@media (max-width:860px){.faq-grade{grid-template-columns:1fr}}
+
+/* Contato */
+.contato-grade{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:stretch}
+.info{background:#fff;border-radius:var(--raio);padding:clamp(26px,4vw,40px);display:grid;gap:24px;align-content:start}
+.info-item{display:flex;gap:16px}
+.info-item svg{flex:none;width:22px;height:22px;margin-top:3px;stroke:var(--acento-texto);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.info-item b{display:block;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-2);font-weight:600;margin-bottom:2px}
+.info .btn{justify-self:start}
+.mapa{border-radius:var(--raio);overflow:hidden;min-height:380px;background:var(--linha)}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+@media (max-width:860px){.contato-grade{grid-template-columns:1fr}}
+
+/* Rodapé */
+footer{background:var(--rodape);color:rgba(255,255,255,.7);padding:56px 0 32px;font-size:.92rem}
+.rodape{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+.rodape .logo{color:#fff}
+.rodape-links{display:flex;gap:24px}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.rodape-fim{margin-top:32px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:.85rem}
+.aviso-previa{margin-top:18px;font-size:.82rem;color:rgba(255,255,255,.55)}
+.aviso-previa a{text-decoration:underline}
+
+/* Botão flutuante do WhatsApp */
+.whats-flutuante{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1fa855;color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.25);transition:transform .15s}
+.whats-flutuante:hover{transform:scale(1.07)}
+.whats-flutuante svg{width:30px;height:30px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- ÍCONE DO WHATSAPP (reutilizado em vários botões) -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm5.82 14.04c-.24.69-1.42 1.32-1.96 1.36-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82s.7-2 .95-2.27c.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.61.47.23.55.77 1.89.84 2.03.07.14.11.3.02.48-.09.18-.14.3-.27.46l-.41.48c-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.34Z"/></symbol>
+</svg>
+
+<div class="barra">
+  <div class="container">
+    <span><b data-campo="bairro">Cambuí, Campinas</b><span class="so-com-horario barra-horario"> · <span data-campo="horario">Seg a Sex 9h–19h; Sáb 9h–14h</span></span></span>
+    <span class="barra-tel">WhatsApp <b data-campo="telefone">(19) 97148-6703</b></span>
+  </div>
+</div>
+
+<header>
+  <div class="container topo">
+    <a href="#inicio" class="logo">
+      <span class="logo-icone"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-10 0 9-2 17-9 17zM4 21c2-6 5-9 10-11"/></svg></span>
+      <span data-campo="nome">Wellness Boutique</span>
+    </a>
+    <nav><ul>
+      <li><a href="#servicos">Tratamentos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Fotos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul></nav>
+    <a class="btn btn-marca link-whats" href="#"><svg><use href="#whats"/></svg><span>WhatsApp</span></a>
+  </div>
+</header>
+
+<main>
+<!-- ================= TOPO (texto + foto) ================= -->
+<section class="hero-dividido" id="inicio">
+  <div class="container hero-grade">
+    <div>
+      <p class="sobretitulo">Transformação corporal em <span data-campo="bairro">Cambuí, Campinas</span></p>
+      <h1>Cuidar do corpo <em>com método</em>.</h1>
+      <p class="hero-texto">Clínica de estética no Cambuí focada em transformação corporal e bem-estar.</p>
+      <div class="hero-botoes">
+        <a class="btn btn-marca link-whats" href="#"><svg><use href="#whats"/></svg>Agendar avaliação</a>
+        <a class="btn btn-contorno" href="#servicos">Ver tratamentos</a>
+      </div>
+    <ul class="hero-pontos"><li>Transformação corporal</li><li>Atendimento com hora marcada</li></ul>
+    </div>
+    <div class="hero-moldura">
+      <!-- A foto vem de CLIENTE.fotoHero (no final do arquivo) -->
+      <img id="hero-foto" alt="">
+      <div class="cartao-nota so-com-nota"><b data-campo="nota"></b><div><span class="estrelas">★★★★★</span><span data-campo="avaliacoes"></span> avaliações no Google</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAIXA DE NÚMEROS ================= -->
+<section class="faixa-numeros">
+  <div class="container numeros">
+    <div class="numero so-com-nota"><b><span data-campo="nota"></span></b><span>nota no Google</span></div>
+    <div class="numero so-com-nota"><b><span data-campo="avaliacoes"></span></b><span>avaliações</span></div>
+    <div class="numero"><b>Cambuí</b><span>Campinas</span></div>
+    <div class="numero so-com-horario"><b><span data-campo="horario-curto">Seg a Sáb</span></b><span>funcionamento</span></div>
+  </div>
+</section>
+
+<!-- ================= SERVIÇOS ================= -->
+<section id="servicos">
+  <div class="container">
+    <div class="cabecalho">
+      <div>
+        <p class="sobretitulo">Tratamentos</p>
+        <h2>Como a clínica trabalha</h2>
+      </div>
+      <p class="subtitulo">Avaliação antes de qualquer protocolo.</p>
+    </div>
+    <div class="grade-servicos">
+      <article class="servico"><div class="icone"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Avaliação</h3><p>Conversa e análise do seu objetivo.</p></article>
+      <article class="servico"><div class="icone"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Corporal</h3><p>Protocolos de transformação corporal.</p></article>
+      <article class="servico"><div class="icone"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-10 0 9-2 17-9 17zM4 21c2-6 5-9 10-11"/></svg></div><h3>Bem-estar</h3><p>Cuidado com o corpo por inteiro.</p></article>
+      <article class="servico"><div class="icone"><svg viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg></div><h3>Acompanhamento</h3><p>Evolução acompanhada de perto.</p></article>
+      <article class="servico"><div class="icone"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.010M12 6h.010M16 6h.010M8 10h.010M12 10h.010M16 10h.010M8 14h.010M12 14h.010M16 14h.010"/></svg></div><h3>Cambuí</h3><p>R. dos Alecrins, 667.</p></article>
+      <article class="servico"><div class="icone"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>Seg a sáb</h3><p>Seg a sex 9h–19h; sáb 9h–14h.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section id="sobre" style="padding-top:0">
+  <div class="container sobre-grade" id="sobre-grade">
+    <div class="sobre-foto">
+      <!-- A foto vem de CLIENTE.fotoSobre (no final do arquivo) -->
+      <img id="sobre-foto" alt="" loading="lazy">
+    </div>
+    <div>
+      <p class="sobretitulo">Sobre</p>
+      <h2>A Wellness Boutique</h2>
+      <p class="subtitulo">A Wellness Boutique fica na Rua dos Alecrins, no Cambuí, e atende de segunda a sábado, com hora marcada.</p>
+      <ul class="lista-check">
+        <li>R. dos Alecrins, 667, Cambuí</li>
+        <li>Seg a sex 9h–19h; sáb 9h–14h</li>
+        <li>Transformação corporal e bem-estar</li>
+        <li>Agendamento pelo WhatsApp</li>
+      </ul>
+      <a class="btn btn-contorno link-whats" href="#">Agendar avaliação</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIA (só aparece se houver fotos em CLIENTE.fotos) ================= -->
+<section id="galeria" hidden style="padding-top:0">
+  <div class="container">
+    <div class="cabecalho">
+      <div>
+        <p class="sobretitulo">Fotos</p>
+        <h2>Um pouco do clima da casa</h2>
+      </div>
+    </div>
+    <div class="grade-fotos" id="grade-fotos"></div>
+  </div>
+</section>
+
+<!-- ================= CHAMADA ================= -->
+<section class="chamada">
+  <div class="container">
+    <div>
+      <h2>Vamos começar <em>a sua transformação</em>?</h2>
+      <p>Chame no WhatsApp e agende uma avaliação.</p>
+    </div>
+    <a class="btn btn-claro link-whats" href="#"><svg><use href="#whats"/></svg>Agendar pelo WhatsApp</a>
+  </div>
+</section>
+
+
+
+<!-- ================= DÚVIDAS ================= -->
+<section>
+  <div class="container faq-grade">
+    <div>
+      <p class="sobretitulo">Dúvidas frequentes</p>
+      <h2>Perguntas que sempre recebemos</h2>
+      <p class="subtitulo">Não encontrou a sua? Chame no WhatsApp que a gente responde.</p>
+    </div>
+    <div>
+      <details><summary>Onde vocês ficam?</summary><p>Estamos na Rua dos Alecrins, 667, no Cambuí, em Campinas. O mapa está logo abaixo.</p></details>
+      <details><summary>Qual é o horário de funcionamento?</summary><p>Seg a Sex 9h–19h; Sáb 9h–14h.</p></details>
+      <details><summary>Como agendo?</summary><p>Pelo WhatsApp (19) 97148-6703. É só tocar em qualquer botão desta página.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section id="contato" class="fundo-creme">
+  <div class="container">
+    <div class="cabecalho">
+      <div>
+        <p class="sobretitulo">Contato</p>
+        <h2>Venha nos visitar</h2>
+      </div>
+      <p class="subtitulo">Estamos esperando você.</p>
+    </div>
+    <div class="contato-grade">
+      <div class="info">
+        <div class="info-item"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Endereço</b><span data-campo="endereco">R. dos Alecrins, 667 – Cambuí, Campinas/SP</span></div></div>
+        <div class="info-item so-com-horario"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Horário</b><span data-campo="horario">Seg a Sex 9h–19h; Sáb 9h–14h</span></div></div>
+        <div class="info-item"><svg viewBox="0 0 24 24"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.100 1 .400 1.900.700 2.800a2 2 0 0 1-.500 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.900.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg><div><b>Telefone / WhatsApp</b><span data-campo="telefone">(19) 97148-6703</span></div></div>
+        <a class="btn btn-marca link-whats" href="#"><svg><use href="#whats"/></svg>Agendar avaliação</a>
+      </div>
+      <div class="mapa"><iframe id="mapa" title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="rodape">
+      <a href="#inicio" class="logo"><span data-campo="nome">Wellness Boutique</span></a>
+      <div class="rodape-links">
+        <a class="link-insta" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a class="link-whats" href="#">WhatsApp</a>
+      </div>
+    </div>
+    <div class="rodape-fim">
+      <span>© <span id="ano"></span> <span data-campo="nome">Wellness Boutique</span><span id="registro-bloco"> · <span data-campo="registro"></span></span></span>
+      <span data-campo="endereco">R. dos Alecrins, 667 – Cambuí, Campinas/SP</span>
+    </div>
+    <!-- Aviso de prévia: some sozinho quando CLIENTE.previa = false -->
+    <div class="aviso-previa" id="aviso-previa" hidden></div>
+  </div>
+</footer>
+
+<a class="whats-flutuante link-whats" href="#" aria-label="Falar no WhatsApp"><svg><use href="#whats"/></svg></a>
+
+<script>
+/* ==========================================================
+   DADOS DO CLIENTE — para adaptar o site a outra empresa,
+   basta trocar os textos abaixo. Tudo no site se atualiza sozinho.
+   ========================================================== */
+const CLIENTE = {
+  nome: "Wellness Boutique",
+  tipo: "Clínica de estética",                     // aparece no título da aba do navegador
+  bairro: "Cambuí, Campinas",                 // cidade ou bairro
+  telefone: "(19) 97148-6703",
+  whatsapp: "5519971486703",             // só números, com 55 + DDD
+  mensagemWhats: "Olá! Vi o site de vocês e gostaria de mais informações.",
+  endereco: "R. dos Alecrins, 667 – Cambuí, Campinas/SP",
+  horario: "Seg a Sex 9h–19h; Sáb 9h–14h",
+  "horario-curto": "Seg a Sáb",
+  nota: "5,0",                     // nota no Google. Deixe "" para esconder
+  avaliacoes: "50",         // quantidade de avaliações no Google
+  registro: "",             // registro profissional no rodapé. Deixe "" para esconder
+  instagram: "",           // deixe "" para esconder o link
+
+  // FOTOS. As que estão aqui são de exemplo (Unsplash).
+  // Troque pelos links das fotos reais do cliente. Deixe "" ou [] para esconder.
+  fotoHero: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1100&q=75",
+  fotoSobre: "https://images.unsplash.com/photo-1647004692483-c5d942fe1137?auto=format&fit=crop&w=1000&q=75",
+  fotos: [
+  ],
+
+  // AVALIAÇÕES. No site final, copie avaliações VERDADEIRAS do Google do cliente.
+  depoimentos: [
+  ],
+
+  // AVISO DE PRÉVIA no rodapé. No site final do cliente, troque para false.
+  previa: true,
+  autorPrevia: "Vinicius",
+  autorWhats: ""                        // seu WhatsApp (55 + DDD + número) para o link "Quero este site"
+};
+
+// Preenche todos os campos marcados com data-campo
+document.querySelectorAll("[data-campo]").forEach(function (el) {
+  const valor = CLIENTE[el.dataset.campo];
+  if (valor) el.textContent = valor;
+});
+document.title = CLIENTE.nome + " | " + CLIENTE.tipo + " em " + CLIENTE.bairro;
+
+// Esconde o que depende de dados que o cliente não tem
+if (!CLIENTE.nota) document.querySelectorAll(".so-com-nota").forEach(function (el) { el.hidden = true; });
+if (!CLIENTE.horario) document.querySelectorAll(".so-com-horario").forEach(function (el) { el.hidden = true; });
+if (!CLIENTE.registro) document.getElementById("registro-bloco").hidden = true;
+
+// Links do WhatsApp e Instagram
+const linkWhats = "https://wa.me/" + CLIENTE.whatsapp + "?text=" + encodeURIComponent(CLIENTE.mensagemWhats);
+document.querySelectorAll(".link-whats").forEach(function (a) { a.href = linkWhats; a.target = "_blank"; a.rel = "noopener"; });
+document.querySelectorAll(".link-insta").forEach(function (a) {
+  if (CLIENTE.instagram) a.href = CLIENTE.instagram; else a.hidden = true;
+});
+
+// Fotos. Se uma foto não carregar, ela é escondida e o site continua bonito.
+function colocarFoto(img, link, descricao) {
+  img.alt = descricao;
+  img.onerror = function () { img.hidden = true; };
+  img.src = link;
+}
+const heroFoto = document.getElementById("hero-foto");
+if (CLIENTE.fotoHero) colocarFoto(heroFoto, CLIENTE.fotoHero, CLIENTE.nome);
+else { heroFoto.hidden = true; document.getElementById("inicio").classList.add("sem-foto"); }
+
+if (CLIENTE.fotoSobre) colocarFoto(document.getElementById("sobre-foto"), CLIENTE.fotoSobre, "Equipe " + CLIENTE.nome);
+else document.getElementById("sobre-grade").classList.add("sem-foto");
+
+if (CLIENTE.fotos.length) {
+  const grade = document.getElementById("grade-fotos");
+  CLIENTE.fotos.forEach(function (link) {
+    const img = document.createElement("img");
+    img.loading = "lazy";
+    colocarFoto(img, link, "Foto de " + CLIENTE.nome);
+    grade.append(img);
+  });
+  document.getElementById("galeria").hidden = false;
+}
+
+// Depoimentos
+const gradeDepo = document.getElementById("grade-depo");
+if (gradeDepo) {
+  CLIENTE.depoimentos.forEach(function (d) {
+    const cartao = document.createElement("div");
+    cartao.className = "depo";
+    cartao.innerHTML = '<div class="estrelas">★★★★★</div><p></p><div class="autor"><span class="avatar"></span><div><span class="depo-nome"></span><small></small></div></div>';
+    cartao.querySelector("p").textContent = "“" + d.texto + "”";
+    cartao.querySelector(".avatar").textContent = d.nome.charAt(0);
+    cartao.querySelector(".depo-nome").textContent = d.nome;
+    cartao.querySelector("small").textContent = d.detalhe || "";
+    gradeDepo.append(cartao);
+  });
+  if (!CLIENTE.depoimentos.length) document.getElementById("depoimentos").hidden = true;
+}
+
+// Mapa do Google pelo endereço
+document.getElementById("mapa").src = "https://maps.google.com/maps?q=" + encodeURIComponent(CLIENTE.endereco) + "&output=embed";
+document.getElementById("ano").textContent = new Date().getFullYear();
+
+// Aviso de prévia
+if (CLIENTE.previa) {
+  const aviso = document.getElementById("aviso-previa");
+  aviso.textContent = "Prévia de site criada por " + CLIENTE.autorPrevia + " para apresentação. Não é o site oficial da empresa. Fotos ilustrativas. ";
+  if (CLIENTE.autorWhats) {
+    const link = document.createElement("a");
+    link.href = "https://wa.me/" + CLIENTE.autorWhats + "?text=" + encodeURIComponent("Oi! Vi a prévia do site de " + CLIENTE.nome + " e quero saber mais.");
+    link.target = "_blank"; link.rel = "noopener";
+    link.textContent = "Quero este site";
+    aviso.append(link);
+  }
+  aviso.hidden = false;
+}
+</script>
+</body>
+</html>
